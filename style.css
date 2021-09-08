@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@200&family=Satisfy&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat, repeat;
+    margin: 0;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.searchform{
+    display: flex;
+    
+}
+input{
+    height: 51px;
+    width: 821px;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 43.5px;
+}
+button {
+    height: 51px;
+    width: 132px;
+    border: none;
+    outline: none;
+    border-radius: 43.5px;
+    font-size: 19px;
+    margin-left: 10px;
+    background: #649290;
+    color: white;
+}
+
+
+#main{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+}
+.weather-box {
+    position: absolute;
+    width: 609px;
+    height: 186px;
+    margin-left: 30px;
+    margin-top: 30px;
+    background: linear-gradient(
+        0deg, rgba(214, 214, 214, 0.4), rgba(214, 214, 214, 0.4)), #FFFFFF;
+    opacity: 0.38;
+    border-radius: 133px;
+    z-index: -1;    
+}
+
+
+.attractions-header {
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 34px;
+    margin-bottom: auto;
+    /* line-height: 45px; */
+    /* text-align: center; */
+    color: #000000;
+}
+
+
+.box{
+    display: flex;
+    height: 800px;
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    text-align: center;
+    /* margin-top: 222px; */
+}
+
+ .header h1{
+    position: absolute;
+    /* width: 582px; */
+    /* height: 86px; */
+    font-family: Satisfy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 104px;
+    text-align: center;
+    color: white;
+    margin-right: 1000px;
+}
+
+.header{
+    position: relative;
+    width: 1328px;
+    height: 86px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+   
+
+}
+.header p {
+    position: absolute;
+    /* width: 582px; */
+    /* height: 50px; */
+    margin-left: 746px;
+    /* margin-top: 80px; */
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.weather {
+    font-size: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weather small {
+    margin-top: 70px;
+    margin-right: 80px;
+    margin-left: -191px;
+    color: white;
+    font-size: 36px;
+}
+.weather img {
+    width: 127px;
+    margin-top: 24px;
+}
+.weather p{
+   
+    font-style: normal;
+    font-weight: normal;
+    margin-top: 65px;   
+}
+
+
+.weather h2 {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 50px;   
+    margin: auto;
+    margin-right: 80px;
+}
+#att{
+    
+    font-size: 15px;
+}
+
+.attractions {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.places {
+    background: #649290;
+    border-radius: 47px;
+    box-shadow: 0px 3px 22px -12px #000000;
+    opacity: 0.92;
+    width: 342px;
+    height: 406px;
+    margin: 20px;
+    padding: 40px 20px 20px 20px;
+    overflow-wrap: anywhere;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Name{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bookmark{
+    margin-bottom: 50px;
+}
+
+.address{
+    margin-bottom: -15px;
+    color: rgb(255, 255, 255);
+}
+
+footer{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
+}

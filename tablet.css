@@ -1,0 +1,77 @@
+.header {
+    position: relative;
+    width: auto;
+  
+}
+
+.header p {
+    margin-top: 187px;
+    font-family: Sarabun;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: auto;
+    width: 568px;
+    height: auto;
+}
+
+.header h1 {
+    position: absolute;
+    /* width: 582px; */
+    height: 86px;
+    font-family: Satisfy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 104px;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+input {
+    height: 51px;
+    width: 592px;
+    font-size: 20px;
+    padding: 20px;
+    border: none;
+    outline: none;
+    border-radius: 43.5px;
+}
+
+.box {
+    margin-top: 100px;
+    height: auto;
+    width: auto;
+}
+
+.attractions {
+    flex-direction: column;
+}
+
+.places {
+    height: 630px;
+    width: 450px;   
+}
+
+.Name {
+    font-size: 35px;
+}
+.places img {
+    width: 140px;
+}
+
+ h4 {
+    font-size: 25px;
+}
+
+.address {
+    font-size: 31px;
+}
+
+body{
+    background-image: url("bg.jpg");
+
+}
