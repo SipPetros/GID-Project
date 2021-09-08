@@ -132,3 +132,8 @@ button {
 footer {
     margin:15px;
 }
+
+body{
+    background-image: url("bg.jpg");
+
+}
