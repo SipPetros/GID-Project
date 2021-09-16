@@ -3,6 +3,7 @@ const apikey = '3265874a2c77ae4a04bb96236a642d2f';
 const main = document.getElementById('main');
 const form = document.getElementById('search-form');
 const search = document.getElementById('Search');
+const btn = document.getElementById('btn');
 
 const url = (city) => `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}`;
 
@@ -39,20 +40,26 @@ function KtoC(K) {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-
+  btn.disabled = true;
+  btn.style.background = "#8ec0bd";
   const city = search.value;
 
   if (city) {
     getWeatherByLocation(city);
     getAttractionsByLocation(city);
+    inout();
+    init();
   }
 });
 
 function getResults() {
   const city = search.value;
-
+  btn.disabled = true;
+  btn.style.background = "#8ec0bd";
   if (city) {
     getWeatherByLocation(city);
     getAttractionsByLocation(city);
+    inout();
+    init();
   }
 }

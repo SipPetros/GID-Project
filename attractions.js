@@ -1,7 +1,6 @@
 const CLIENT_ID = 'GUEXKUPRYWQ1YCEJIGTOJXVBKTWS2W3DK35O335ICFQZ15GJ';
 const CLIENT_SECRET = 'M3II2ON3K4KGR3VWGWFJMBBNZD3NXCNQ01Z1MPFT1IZY0P11';
 
-let venuePhoto;
 const att = document.getElementById('att');
 const favoriteListKey = 'favorite_list';
 
@@ -14,17 +13,6 @@ async function getAttractionsByLocation(city) {
 
   console.log(respData);
   addAttractionsToPage(respData.response.venues);
-}
-
-const photo_URL = (id) => `https://api.foursquare.com/v2/venues/${id}/photos?client_id=${CLIENT_ID}&client_secret=${CLIENT_SECRET}&v=20210904&group=venue&limit=10`;
-
-async function getPhotosByAttractions(id) {
-  const resp = await fetch(photo_URL(id));
-  const respData = await resp.json();
-
-  console.log(respData);
-
-  venuePhoto = `${respData.response.photos.items[0].prefix}100x100${respData.response.photos.items[0].suffix}`;
 }
 
 function getRandomInt(max) {
@@ -85,8 +73,6 @@ function addAttractionsToPage(venues) {
     bookmarkButton.id = currentVenue.id;
     bookmarkButton.textContent = isVenueBookmarked ? '🖤' : '❤️';
 
-    // getPhotosByAttractions(currentVenue.id);
-    // <img src="${venuePhoto}" />
     att.innerHTML = `
     <h3 class="attractions-header">Top Attractions</h3>`;
     places.innerHTML = `
@@ -98,7 +84,7 @@ function addAttractionsToPage(venues) {
     <h4>${currentVenue.location.formattedAddress}</h4>
     `;
     places.appendChild(bookmarkButton);
-    
+
     attractions.appendChild(places);
     att.appendChild(attractions);
   }

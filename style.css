@@ -48,13 +48,31 @@ button {
     color: white;
 }
 
+button:hover{
+    background:#6cb1ab;
+    transition:0.3s;
+}
+
 
 #main{
     margin-top: 40px;
     margin-bottom: 40px;
     text-align: center;
     font-size: 30px;
+    
 }
+
+.first-section {
+        opacity: 0;
+        display: block;
+        transition: opacity 2s ease-in;
+    }
+.second-section {
+        opacity: 0;
+        display: block;
+        transition: opacity 1s ease-in;
+    }
+
 .weather-box {
     position: absolute;
     width: 609px;

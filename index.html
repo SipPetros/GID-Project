@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ThisTime</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/loader.css">
     <link rel="stylesheet" href="tablet.css" media="(max-width:1366px) and (min-width: 767px)">
     <link rel="stylesheet" href="mobile.css" media="(max-width:767px)" and (min-width: 320px)">
     
@@ -19,15 +20,23 @@
     <form id="search-form" class="searchform">
         <input type="text" name="" id="Search" placeholder="Search by location" autocomplete="off"/>
         <button id='btn' type="button" onclick="getResults()" >Search</button>
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
     </form>
-    <main id="main">
+
+    
+    <main id="main" class="first-section">
 
     </main>
     
-    <main id="att">
+    <main id="att" class="second-section">
         
 
     </main>
+    <script src="loader.js"></script>
     <script src="weather.js"></script>
     <script src="attractions.js"></script>
 </div>
